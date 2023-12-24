@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+    background-image: url('https://usagif.com/wp-content/uploads/gifs/starfall-gif-46.gif'); /* Reemplaza 'ruta/al/tu-gif.gif' con la ruta de tu GIF */
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la pantalla */
+    background-attachment: fixed; /* Fija el fondo para que no se desplace con el contenido */
+  }
+  #miDiv {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, rgb(255, 255, 255), rgb(222, 255, 222));
+    border-image-slice: 1;
+    margin: 20px; /* Ajusta este valor para cambiar el espacio alrededor del div */
+    padding: 20px; /* Ajusta este valor para cambiar el espacio dentro del div */
+}
+@keyframes colorChange {
+    0% { background-color: red; }
+    25% { background-color: yellow; }
+    50% { background-color: blue; }
+    75% { background-color: green; }
+    100% { background-color: red; }
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .styled-header {
+    font-size: 48px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, #FFC0CB, #87CEFA);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    animation: colorChange 5s infinite;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .styled-button {
+    padding: 15px 25px;
+    font-size: 24px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: colorChange 5s infinite;
+    background-image: linear-gradient(to right, #FFC0CB, #87CEFA);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .styled-button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  }
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .styled-header {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    #miDiv {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  /* Estilos generales */
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-video {
+    width: 100%;
+    height: auto;
+}
+
+.card-description {
+    padding: 15px;
+}
+
+.card-description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-description p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+.card-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
